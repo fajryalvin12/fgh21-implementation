@@ -1,12 +1,12 @@
-const nama = "malam"; 
+const cekPalindrom = function (kata) {
+    let hasil = ""
+    for(let i = kata.length; i > 0; i--)
+        hasil = hasil + kata[i-1]; 
+        if (kata.length > 0) {
+            if (hasil === kata) {
+                console.log("Palindrom")
+         }
+     }
+}
 
-let hasil = "";
-for(let i = nama.length; i > 0; i--)
-    hasil += nama[i-1] ;
-if(nama.length > 0) {
-    if(hasil === nama) {
-        console.log("Palindrom")
-    } else {
-        console.log("Maaf, kata ini bukan palindrom")
-    }
-} 
+cekPalindrom("malam")
