@@ -2,7 +2,7 @@ const reverseWords = (kalimat) => {
     let arr = []
     let ba, bb = 0
     for (let i = 0; i < kalimat.length; i++) {
-        if(kalimat[i] === " " || i === kalimat.length) {
+        if(kalimat[i] === " " || i === kalimat.length - 1) {
             if (i === kalimat.length - 1) {
                 ba = i + 1 
             } else {
@@ -12,7 +12,7 @@ const reverseWords = (kalimat) => {
             for(let j = bb; j < ba; j++) {
                 kata = kata + kalimat[j]
             }
-            arr = [...arr, kata]
+            arr = [kata, ...arr]
             bb = ba + 1
             }
         }
